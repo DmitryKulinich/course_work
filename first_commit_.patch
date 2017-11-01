@@ -1,0 +1,2695 @@
+Index: HtmlFiles/Components/1Part.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HtmlFiles/Components/1Part.txt	(revision )
++++ HtmlFiles/Components/1Part.txt	(revision )
+@@ -0,0 +1,9 @@
++<!DOCTYPE html >
++
++<html lang="ru">
++<head>
++	<title>Отчёт</title>
++</head>
++<body>
++	<h1>Отчёт о работе программы "Матричный калькулятор"</h1>
++	<h3>Дата и время создания отчёта:
+\ No newline at end of file
+Index: HtmlFiles/Report_Wed_Nov_01_11:30:35_EET_2017.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HtmlFiles/Report_Wed_Nov_01_11:30:35_EET_2017.html	(revision )
++++ HtmlFiles/Report_Wed_Nov_01_11:30:35_EET_2017.html	(revision )
+@@ -0,0 +1,34 @@
++<!DOCTYPE html >
++
++<html lang="ru">
++<head>
++	<title>Отчёт</title>
++</head>
++<body>
++	<h1>Отчёт о работе программы "Матричный калькулятор"</h1>
++	<h3>Дата и время создания отчёта:Wed Nov 01 11:30:35 EET 2017</h3>
++	<h3>Имя пользователя:Dmitry</h3>
++	<pre>
++	<h3>
++First Matrix
++12.0	23.0	
++45.0	67.0	
++	</h3>
++	</pre>
++	<pre>
++	<h3>
++Second Matrix
++	</h3>
++	</pre>
++	<h3>First<sup><small>T</small></sup> = </h3>
++	<pre>
++	<h3>
++Result Matrix
++12.0	45.0	
++23.0	67.0	
++	</h3>
++	</pre>
++	<pre>Национальный Технический Университет
++"Харьковский Политехнический Институт"</pre>
++</body>
++</html>
+Index: XmlFiles/SavedProcess_Tue_Oct_31_20:38:01_EET_2017.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- XmlFiles/SavedProcess_Tue_Oct_31_20:38:01_EET_2017.xml	(revision )
++++ XmlFiles/SavedProcess_Tue_Oct_31_20:38:01_EET_2017.xml	(revision )
+@@ -0,0 +1,212 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<java version="1.8.0_151" class="java.beans.XMLDecoder">
++ <object class="ReadWrite.StructureForSave">
++  <void property="action">
++   <array class="java.lang.Double" length="2">
++    <void index="0">
++     <double>8.0</double>
++    </void>
++    <void index="1">
++     <double>0.0</double>
++    </void>
++   </array>
++  </void>
++  <void property="first">
++   <object class="CourseWork.Matrix">
++    <void property="column">
++     <int>2</int>
++    </void>
++    <void property="matrix">
++     <array class="[LNumbers.Number;" length="3">
++      <void index="0">
++       <array class="Numbers.Number" length="2">
++        <void index="0">
++         <object class="Numbers.SimpleNumber" id="SimpleNumber0">
++          <void property="x">
++           <double>1.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.SimpleNumber" id="SimpleNumber1">
++          <void property="x">
++           <double>2.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++      <void index="1">
++       <array class="Numbers.Number" length="2">
++        <void index="0">
++         <object class="Numbers.SimpleNumber" id="SimpleNumber2">
++          <void property="x">
++           <double>2.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.SimpleNumber" id="SimpleNumber3">
++          <void property="x">
++           <double>3.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++      <void index="2">
++       <array class="Numbers.Number" length="2">
++        <void index="0">
++         <object class="Numbers.SimpleNumber" id="SimpleNumber4">
++          <void property="x">
++           <double>3.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.SimpleNumber" id="SimpleNumber5">
++          <void property="x">
++           <double>4.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++     </array>
++    </void>
++    <void property="row">
++     <int>3</int>
++    </void>
++   </object>
++  </void>
++  <void property="result">
++   <object class="CourseWork.Matrix">
++    <void property="column">
++     <int>3</int>
++    </void>
++    <void property="matrix">
++     <array class="[LNumbers.Number;" length="3">
++      <void index="0">
++       <array class="Numbers.Number" length="3">
++        <void index="0">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>5.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>8.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="2">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>11.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++      <void index="1">
++       <array class="Numbers.Number" length="3">
++        <void index="0">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>8.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>13.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="2">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>18.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++      <void index="2">
++       <array class="Numbers.Number" length="3">
++        <void index="0">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>11.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>18.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="2">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>25.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++     </array>
++    </void>
++    <void property="row">
++     <int>3</int>
++    </void>
++   </object>
++  </void>
++  <void property="second">
++   <object class="CourseWork.Matrix">
++    <void property="column">
++     <int>3</int>
++    </void>
++    <void property="matrix">
++     <array class="[LNumbers.SimpleNumber;" length="2">
++      <void index="0">
++       <array class="Numbers.SimpleNumber" length="3">
++        <void index="0">
++         <object idref="SimpleNumber0"/>
++        </void>
++        <void index="1">
++         <object idref="SimpleNumber2"/>
++        </void>
++        <void index="2">
++         <object idref="SimpleNumber4"/>
++        </void>
++       </array>
++      </void>
++      <void index="1">
++       <array class="Numbers.SimpleNumber" length="3">
++        <void index="0">
++         <object idref="SimpleNumber1"/>
++        </void>
++        <void index="1">
++         <object idref="SimpleNumber3"/>
++        </void>
++        <void index="2">
++         <object idref="SimpleNumber5"/>
++        </void>
++       </array>
++      </void>
++     </array>
++    </void>
++    <void property="row">
++     <int>2</int>
++    </void>
++   </object>
++  </void>
++ </object>
++</java>
+Index: HtmlFiles/Components/4Part.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HtmlFiles/Components/4Part.txt	(revision )
++++ HtmlFiles/Components/4Part.txt	(revision )
+@@ -0,0 +1,4 @@
++<pre>Национальный Технический Университет
++"Харьковский Политехнический Институт"</pre>
++</body>
++</html>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision )
++++ .idea/misc.xml	(revision )
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="EntryPointsManager">
++    <entry_points version="2.0" />
++  </component>
++  <component name="ProjectKey">
++    <option name="state" value="project://e2804f05-5315-4fc6-a121-c522a6c26470" />
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/project-template.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/project-template.xml	(revision )
++++ .idea/project-template.xml	(revision )
+@@ -0,0 +1,3 @@
++<template>
++  <input-field default="com.company">IJ_BASE_PACKAGE</input-field>
++</template>
+\ No newline at end of file
+Index: CourseWork_v3.0.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- CourseWork_v3.0.iml	(revision )
++++ CourseWork_v3.0.iml	(revision )
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="library" exported="" name="dist" level="project" />
++  </component>
++</module>
+\ No newline at end of file
+Index: HtmlFiles/Components/Report.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HtmlFiles/Components/Report.html	(revision )
++++ HtmlFiles/Components/Report.html	(revision )
+@@ -0,0 +1,23 @@
++<!DOCTYPE html >
++
++<html lang="ru">
++<head>
++	<title>Отчёт</title>
++</head>
++<body>
++	<h1>Отчёт о работе программы "Матричный калькулятор"</h1>
++	<h3>Дата и время создания отчёта: </h3>
++	<h3>Имя пользователя: </h3>
++	<table>
++		<tr>
++			<td>...</td>
++		</tr>
++		<tr>
++			<td>...</td>
++		</tr>
++	</table>
++	<p> Программа является курсовой работой студента</p>
++	<p> Харьковского Политехнического Института</p>
++	<p> Кулинича Дмитрия</p>
++</body>
++</html>
+\ No newline at end of file
+Index: src/Exceptions/IncorrectSizeException.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Exceptions/IncorrectSizeException.java	(revision )
++++ src/Exceptions/IncorrectSizeException.java	(revision )
+@@ -0,0 +1,17 @@
++package Exceptions;
++
++public class IncorrectSizeException extends IllegalArgumentException {
++    private String massage;
++
++    public IncorrectSizeException(String massage){
++        this.massage = massage;
++    }
++
++    public IncorrectSizeException(){
++        this.massage = "Incorrect size for this operation";
++    }
++
++    public String getMassage(){
++        return massage;
++    }
++}
+Index: HtmlFiles/Report_Tue_Oct_31_20:27:24_EET_2017.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HtmlFiles/Report_Tue_Oct_31_20:27:24_EET_2017.html	(revision )
++++ HtmlFiles/Report_Tue_Oct_31_20:27:24_EET_2017.html	(revision )
+@@ -0,0 +1,39 @@
++<!DOCTYPE html >
++
++<html lang="ru">
++<head>
++	<title>Отчёт</title>
++</head>
++<body>
++	<h1>Отчёт о работе программы "Матричный калькулятор"</h1>
++	<h3>Дата и время создания отчёта:Tue Oct 31 20:27:24 EET 2017</h3>
++	<h3>Имя пользователя:Dmitry</h3>
++	<table>
++	<pre>
++	<h3>
++First Matrix
++Matrix is: 
++-4.0 + 34.0i	3.0 + 342.0i	
++12.7 - 321.7i	23.4 - 12.8i	
++	</h3>
++	</pre>
++	<pre>
++	<h3>
++Second Matrix
++Matrix is: 
++-4.0 + 34.0i	12.7 - 321.7i	
++3.0 + 342.0i	23.4 - 12.8i	
++	</h3>
++	</pre>
++	<h3>Unknown operation</h3>
++	<pre>
++	<h3>
++Result Matrix
++Matrix is: 
++-8.0 + 68.0i	15.7 + 20.30000000000001i	
++15.7 + 20.30000000000001i	46.8 - 25.6i	
++	</h3>
++	</pre>
++	</table>
++</body>
++</html>
+Index: src/Numbers/ComplexNumber.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Numbers/ComplexNumber.java	(revision )
++++ src/Numbers/ComplexNumber.java	(revision )
+@@ -0,0 +1,158 @@
++package Numbers;
++
++import java.io.Serializable;
++import java.util.Objects;
++import java.util.StringTokenizer;
++
++public class ComplexNumber extends Number implements Serializable{
++
++    private Double re = 0.0;   // the real part
++    private Double im = 0.0;   // the imaginary part
++
++    public ComplexNumber(Double re, Double im) {
++        this.re = re;
++        this.im = im;
++    }
++    public ComplexNumber(){
++        this.setRe(0.0);
++        this.setIm(0.0);
++    }
++
++    public void setNumber(String num){
++        StringTokenizer st = new StringTokenizer(num," +-i", true);
++        Integer iter = 0;
++        this.setRe(1.0);
++        while(st.hasMoreTokens()){
++            String temp = st.nextToken();
++            if(temp.equals(" ")){
++                continue;
++            }
++            if(iter.equals(0) && temp.equals("-")){
++                this.setRe(-1.0);
++                continue;
++            }
++            if(iter.equals(0)){
++                this.setRe(getRe()*Double.parseDouble(temp));
++            }
++            if(iter.equals(1) && temp.equals("-")){
++                this.setIm(-1.0);
++                continue;
++            }
++            if(iter.equals(1) && temp.equals("+")){
++                this.setIm(1.0);
++                continue;
++            }
++            if(iter.equals(1)){
++                this.setIm(getIm()*Double.parseDouble(temp));
++            }
++            iter++;
++        }
++    }
++
++    public Double getRe() { return re; }
++
++    public void setRe(Double re){
++        this.re = re;
++    }
++
++    public Double getIm() { return im; }
++
++    public void setIm(Double im){
++        this.im = im;
++    }
++
++    public Number ret1(){
++        return new ComplexNumber(1.0,0.0);
++    }
++
++
++    public Number plus(Number b){
++        return (Number)this.plus((ComplexNumber)b);
++    }
++    public Number minus(Number b){
++        return (Number)this.minus((ComplexNumber)b);
++    }
++    public Number mul(Number b){
++        return (Number)this.mul((ComplexNumber)b);
++    }
++    public Number div(Number b){
++        return (Number)this.divides((ComplexNumber)b);
++    }
++    public Number mulWithDouble(Double b){
++        return new ComplexNumber(this.re*b,this.im*b);
++    }
++
++    @Override
++    public String toString() {
++        if (im == 0) return re + "";
++        if (re == 0) return im + "i";
++        if (im <  0) return re + " - " + (-im) + "i";
++        return re + " + " + im + "i";
++    }
++
++    public double abs() {
++        return Math.hypot(re, im);
++    }
++    public double phase() {
++        return Math.atan2(im, re);
++    }
++    private ComplexNumber plus(ComplexNumber b) {
++        ComplexNumber a = this;             // invoking object
++        double real = a.re + b.re;
++        double imag = a.im + b.im;
++        return new ComplexNumber(real, imag);
++    }
++    private ComplexNumber minus(ComplexNumber b) {
++        ComplexNumber a = this;
++        double real = a.re - b.re;
++        double imag = a.im - b.im;
++        return new ComplexNumber(real, imag);
++    }
++    private ComplexNumber mul(ComplexNumber b) {
++        ComplexNumber a = this;
++        double real = a.re * b.re - a.im * b.im;
++        double imag = a.re * b.im + a.im * b.re;
++        return new ComplexNumber(real, imag);
++    }
++    private ComplexNumber divides(ComplexNumber b) {
++        ComplexNumber a = this;
++        return a.mul(b.reciprocal());
++    }
++
++    public ComplexNumber scale(double alpha) {
++        return new ComplexNumber(alpha * re, alpha * im);
++    }
++    public ComplexNumber conjugate() {
++        return new ComplexNumber(re, -im);
++    }
++    public ComplexNumber reciprocal() {
++        double scale = re*re + im*im;
++        return new ComplexNumber(re / scale, -im / scale);
++    }
++
++
++    public ComplexNumber exp() {
++        return new ComplexNumber(Math.exp(re) * Math.cos(im), Math.exp(re) * Math.sin(im));
++    }
++    public ComplexNumber sin() {
++        return new ComplexNumber(Math.sin(re) * Math.cosh(im), Math.cos(re) * Math.sinh(im));
++    }
++    public ComplexNumber cos() {
++        return new ComplexNumber(Math.cos(re) * Math.cosh(im), -Math.sin(re) * Math.sinh(im));
++    }
++    public ComplexNumber tan() {
++        return sin().divides(cos());
++    }
++
++    @Override
++    public boolean equals(Object x) {
++        if (x == null) return false;
++        if (this.getClass() != x.getClass()) return false;
++        ComplexNumber that = (ComplexNumber) x;
++        return (this.re == that.re) && (this.im == that.im);
++    }
++    @Override
++    public int hashCode() {
++        return Objects.hash(re, im);
++    }
++}
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(revision )
++++ .idea/vcs.xml	(revision )
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/ReadWrite/ReadWriteXML.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/ReadWrite/ReadWriteXML.java	(revision )
++++ src/ReadWrite/ReadWriteXML.java	(revision )
+@@ -0,0 +1,45 @@
++package ReadWrite;
++
++import CourseWork.Matrix;
++import java.beans.XMLDecoder;
++import java.beans.XMLEncoder;
++import java.io.FileInputStream;
++import java.io.FileOutputStream;
++import java.io.IOException;
++import java.util.Date;
++
++public class ReadWriteXML {
++    public static void WriteXML(StructureForSave first) {
++        Date date = new Date();
++        String Date = date.toString();
++        String[] splitDate = Date.split(" ");
++        Date = "";
++        for(int i = 0; i<splitDate.length; i++){
++            if(i == splitDate.length -1){
++                Date += splitDate[i];
++            }else {
++                Date += splitDate[i] + "_";
++            }
++        }
++        String title = "./XmlFiles/SavedProcess_"+Date+".xml";
++        try (XMLEncoder xmlEncoder = new XMLEncoder(new FileOutputStream(title))) {
++            xmlEncoder.writeObject(first);
++            xmlEncoder.flush();
++        }
++        catch (IOException e) {
++            e.printStackTrace();
++        }
++    }
++
++    public static StructureForSave ReadXML(String title) {
++        title = "./XmlFiles/" + title;
++        StructureForSave first = null;
++        try (XMLDecoder xmlDecoder = new XMLDecoder(new FileInputStream(title))) {
++            first = (StructureForSave) xmlDecoder.readObject();
++        }
++        catch (IOException e) {
++            e.printStackTrace();
++        }
++        return first;
++    }
++}
+Index: .idea/deployment.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/deployment.xml	(revision )
++++ .idea/deployment.xml	(revision )
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="PublishConfigData" serverName="Course_work" uploadOnCheckin="958dc785-8b32-4053-8696-8e2b23a60f5a">
++    <option name="myUploadOnCheckinName" value="Course_work" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/Visualizating/Visualisating.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Visualizating/Visualisating.java	(revision )
++++ src/Visualizating/Visualisating.java	(revision )
+@@ -0,0 +1,5 @@
++package Visualizating;
++
++
++public class Visualisating {
++}
+Index: HtmlFiles/Report_Tue_Oct_31_21:06:49_EET_2017.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HtmlFiles/Report_Tue_Oct_31_21:06:49_EET_2017.html	(revision )
++++ HtmlFiles/Report_Tue_Oct_31_21:06:49_EET_2017.html	(revision )
+@@ -0,0 +1,28 @@
++<!DOCTYPE html >
++
++<html lang="ru">
++<head>
++	<title>Отчёт</title>
++</head>
++<body>
++	<h1>Отчёт о работе программы "Матричный калькулятор"</h1>
++	<h3>Дата и время создания отчёта:Tue Oct 31 21:06:49 EET 2017</h3>
++	<h3>Имя пользователя:Dmitry</h3>
++	<pre>
++	<h3>
++First Matrix
++	</h3>
++	</pre>
++	<pre>
++	<h3>
++Second Matrix
++	</h3>
++	</pre>
++	<h3>Unknown operation</h3>
++	<pre>
++	<h3>
++Result Matrix
++	</h3>
++	</pre>
++	</body>
++</html>
+Index: XmlFiles/SavedProcess_Wed_Nov_01_11:29:58_EET_2017.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- XmlFiles/SavedProcess_Wed_Nov_01_11:29:58_EET_2017.xml	(revision )
++++ XmlFiles/SavedProcess_Wed_Nov_01_11:29:58_EET_2017.xml	(revision )
+@@ -0,0 +1,102 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<java version="1.8.0_151" class="java.beans.XMLDecoder">
++ <object class="ReadWrite.StructureForSave">
++  <void property="action">
++   <array class="java.lang.Double" length="2">
++    <void index="0">
++     <double>4.0</double>
++    </void>
++    <void index="1">
++     <double>0.0</double>
++    </void>
++   </array>
++  </void>
++  <void property="first">
++   <object class="CourseWork.Matrix">
++    <void property="column">
++     <int>2</int>
++    </void>
++    <void property="matrix">
++     <array class="[LNumbers.SimpleNumber;" length="2">
++      <void index="0">
++       <array class="Numbers.SimpleNumber" length="2">
++        <void index="0">
++         <object class="Numbers.SimpleNumber" id="SimpleNumber0">
++          <void property="x">
++           <double>12.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.SimpleNumber" id="SimpleNumber1">
++          <void property="x">
++           <double>23.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++      <void index="1">
++       <array class="Numbers.SimpleNumber" length="2">
++        <void index="0">
++         <object class="Numbers.SimpleNumber" id="SimpleNumber2">
++          <void property="x">
++           <double>45.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.SimpleNumber" id="SimpleNumber3">
++          <void property="x">
++           <double>67.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++     </array>
++    </void>
++    <void property="row">
++     <int>2</int>
++    </void>
++   </object>
++  </void>
++  <void property="result">
++   <object class="CourseWork.Matrix">
++    <void property="column">
++     <int>2</int>
++    </void>
++    <void property="matrix">
++     <array class="[LNumbers.Number;" length="2">
++      <void index="0">
++       <array class="Numbers.Number" length="2">
++        <void index="0">
++         <object idref="SimpleNumber0"/>
++        </void>
++        <void index="1">
++         <object idref="SimpleNumber2"/>
++        </void>
++       </array>
++      </void>
++      <void index="1">
++       <array class="Numbers.Number" length="2">
++        <void index="0">
++         <object idref="SimpleNumber1"/>
++        </void>
++        <void index="1">
++         <object idref="SimpleNumber3"/>
++        </void>
++       </array>
++      </void>
++     </array>
++    </void>
++    <void property="row">
++     <int>2</int>
++    </void>
++   </object>
++  </void>
++  <void property="second">
++   <object class="CourseWork.Matrix"/>
++  </void>
++ </object>
++</java>
+Index: HtmlFiles/Report_Tue_Oct_31_21:04:13_EET_2017.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HtmlFiles/Report_Tue_Oct_31_21:04:13_EET_2017.html	(revision )
++++ HtmlFiles/Report_Tue_Oct_31_21:04:13_EET_2017.html	(revision )
+@@ -0,0 +1,30 @@
++<!DOCTYPE html >
++
++<html lang="ru">
++<head>
++	<title>Отчёт</title>
++</head>
++<body>
++	<h1>Отчёт о работе программы "Матричный калькулятор"</h1>
++	<h3>Дата и время создания отчёта:Tue Oct 31 21:04:13 EET 2017</h3>
++	<h3>Имя пользователя:Dmitry</h3>
++	<table>
++	<pre>
++	<h3>
++First Matrix
++	</h3>
++	</pre>
++	<pre>
++	<h3>
++Second Matrix
++	</h3>
++	</pre>
++	<h3>Unknown operation</h3>
++	<pre>
++	<h3>
++Result Matrix
++	</h3>
++	</pre>
++	</table>
++</body>
++</html>
+Index: src/Numbers/SimpleNumber.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Numbers/SimpleNumber.java	(revision )
++++ src/Numbers/SimpleNumber.java	(revision )
+@@ -0,0 +1,60 @@
++package Numbers;
++
++import java.io.Serializable;
++
++public class SimpleNumber extends Number implements Serializable{
++
++    private Double x = 0.0;
++
++    public SimpleNumber() {
++        x = 0.0;
++    }
++    public SimpleNumber(Double value) {
++        x = value;
++    }
++
++    public Double getX() {
++        return x;
++    }
++    public void setX(Double x) {
++        this.x = x;
++    }
++    public void setNumber(String x){this.x = Double.parseDouble(x);}
++    public  Number ret1(){
++        return new SimpleNumber(1.0);
++    }
++
++    public Number mulWithDouble(Double b){
++        return new SimpleNumber(this.getX()*b);
++    }
++    public Number plus(Number b) {
++        return (Number) this.plus((SimpleNumber) b);
++    }
++    public Number minus(Number b) {
++        return (Number) this.minus((SimpleNumber) b);
++    }
++    public Number mul(Number b) {
++        return (Number) this.mul((SimpleNumber) b);
++    }
++    public Number div(Number b) {
++        return (Number) this.divides((SimpleNumber) b);
++    }
++
++    private SimpleNumber plus(SimpleNumber b) {
++        return new SimpleNumber(this.getX() + b.getX());
++    }
++    private SimpleNumber minus(SimpleNumber b) {
++        return new SimpleNumber(this.getX() - b.getX());
++    }
++    private SimpleNumber mul(SimpleNumber b) {
++        return new SimpleNumber(this.getX() * b.getX());
++    }
++    private SimpleNumber divides(SimpleNumber b) {
++        return new SimpleNumber(this.getX() / b.getX());
++    }
++
++    @Override
++    public String toString() {
++        return x.toString();
++    }
++}
+Index: HtmlFiles/Report_Wed_Nov_01_12:46:58_EET_2017.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HtmlFiles/Report_Wed_Nov_01_12:46:58_EET_2017.html	(revision )
++++ HtmlFiles/Report_Wed_Nov_01_12:46:58_EET_2017.html	(revision )
+@@ -0,0 +1,36 @@
++<!DOCTYPE html >
++
++<html lang="ru">
++<head>
++	<title>Отчёт</title>
++</head>
++<body>
++	<h1>Отчёт о работе программы "Матричный калькулятор"</h1>
++	<h3>Дата и время создания отчёта:Wed Nov 01 12:46:58 EET 2017</h3>
++	<h3>Имя пользователя:Dmitry</h3>
++	<pre>
++	<h3>
++First Matrix
++-2.0 + 67.9i	23.0 - 12.0i	
++12.98 - 23.9i	1.0	
++	</h3>
++	</pre>
++	<pre>
++	<h3>
++Second Matrix
++-4.0 + 57.0i	2.0 - 45.0i	
++34.0 + 123.8i	-34.0 - 12.98i	
++	</h3>
++	</pre>
++	<h3>First  + Second = </h3>
++	<pre>
++	<h3>
++Result Matrix
++-6.0 + 124.9i	25.0 - 57.0i	
++46.980000000000004 + 99.9i	-33.0 - 12.98i	
++	</h3>
++	</pre>
++	<pre>Национальный Технический Университет
++"Харьковский Политехнический Институт"</pre>
++</body>
++</html>
+Index: HtmlFiles/Components/3Part.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HtmlFiles/Components/3Part.txt	(revision )
++++ HtmlFiles/Components/3Part.txt	(revision )
+@@ -0,0 +1,1 @@
++</h3>
+\ No newline at end of file
+Index: src/ReadWrite/StructureForSave.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/ReadWrite/StructureForSave.java	(revision )
++++ src/ReadWrite/StructureForSave.java	(revision )
+@@ -0,0 +1,49 @@
++package ReadWrite;
++
++import CourseWork.Matrix;
++import java.io.Serializable;
++
++public class StructureForSave implements Serializable{
++    private Matrix first;
++    private Matrix second;
++    private Matrix result;
++    private Double[] action;
++
++    public StructureForSave(Matrix first, Matrix second, Matrix result, Double[] action) {
++        this.first = first;
++        this.second = second;
++        this.result = result;
++        this.action = action;
++    }
++
++    public StructureForSave() {
++    }
++
++    public Matrix getFirst() {
++        return first;
++    }
++    public void setFirst(Matrix first) {
++        this.first = first;
++    }
++
++    public Matrix getSecond() {
++        return second;
++    }
++    public void setSecond(Matrix second) {
++        this.second = second;
++    }
++
++    public Matrix getResult() {
++        return result;
++    }
++    public void setResult(Matrix result) {
++        this.result = result;
++    }
++
++    public Double[] getAction() {
++        return action;
++    }
++    public void setAction(Double[] action) {
++        this.action = action;
++    }
++}
+Index: XmlFiles/SavedProcess_Tue_Oct_31_20:31:48_EET_2017.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- XmlFiles/SavedProcess_Tue_Oct_31_20:31:48_EET_2017.xml	(revision )
++++ XmlFiles/SavedProcess_Tue_Oct_31_20:31:48_EET_2017.xml	(revision )
+@@ -0,0 +1,165 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<java version="1.8.0_151" class="java.beans.XMLDecoder">
++ <object class="ReadWrite.StructureForSave">
++  <void property="action">
++   <array class="java.lang.Double" length="2">
++    <void index="0">
++     <double>2.0</double>
++    </void>
++    <void index="1">
++     <double>0.0</double>
++    </void>
++   </array>
++  </void>
++  <void property="first">
++   <object class="CourseWork.Matrix">
++    <void property="column">
++     <int>2</int>
++    </void>
++    <void property="matrix">
++     <array class="[LNumbers.SimpleNumber;" length="2">
++      <void index="0">
++       <array class="Numbers.SimpleNumber" length="2">
++        <void index="0">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>1.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>2.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++      <void index="1">
++       <array class="Numbers.SimpleNumber" length="2">
++        <void index="0">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>3.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>4.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++     </array>
++    </void>
++    <void property="row">
++     <int>2</int>
++    </void>
++   </object>
++  </void>
++  <void property="result">
++   <object class="CourseWork.Matrix">
++    <void property="column">
++     <int>2</int>
++    </void>
++    <void property="matrix">
++     <array class="[LNumbers.Number;" length="2">
++      <void index="0">
++       <array class="Numbers.Number" length="2">
++        <void index="0">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>5.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>7.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++      <void index="1">
++       <array class="Numbers.Number" length="2">
++        <void index="0">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>9.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>11.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++     </array>
++    </void>
++    <void property="row">
++     <int>2</int>
++    </void>
++   </object>
++  </void>
++  <void property="second">
++   <object class="CourseWork.Matrix">
++    <void property="column">
++     <int>2</int>
++    </void>
++    <void property="matrix">
++     <array class="[LNumbers.SimpleNumber;" length="2">
++      <void index="0">
++       <array class="Numbers.SimpleNumber" length="2">
++        <void index="0">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>4.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>5.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++      <void index="1">
++       <array class="Numbers.SimpleNumber" length="2">
++        <void index="0">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>6.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.SimpleNumber">
++          <void property="x">
++           <double>7.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++     </array>
++    </void>
++    <void property="row">
++     <int>2</int>
++    </void>
++   </object>
++  </void>
++ </object>
++</java>
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(revision )
++++ .idea/modules.xml	(revision )
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/CourseWork_v3.0.iml" filepath="$PROJECT_DIR$/CourseWork_v3.0.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: XmlFiles/SavedProcess_Wed_Nov_01_12:46:26_EET_2017.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- XmlFiles/SavedProcess_Wed_Nov_01_12:46:26_EET_2017.xml	(revision )
++++ XmlFiles/SavedProcess_Wed_Nov_01_12:46:26_EET_2017.xml	(revision )
+@@ -0,0 +1,198 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<java version="1.8.0_151" class="java.beans.XMLDecoder">
++ <object class="ReadWrite.StructureForSave">
++  <void property="action">
++   <array class="java.lang.Double" length="2">
++    <void index="0">
++     <double>2.0</double>
++    </void>
++    <void index="1">
++     <double>0.0</double>
++    </void>
++   </array>
++  </void>
++  <void property="first">
++   <object class="CourseWork.Matrix">
++    <void property="column">
++     <int>2</int>
++    </void>
++    <void property="matrix">
++     <array class="[LNumbers.ComplexNumber;" length="2">
++      <void index="0">
++       <array class="Numbers.ComplexNumber" length="2">
++        <void index="0">
++         <object class="Numbers.ComplexNumber">
++          <void property="im">
++           <double>67.9</double>
++          </void>
++          <void property="re">
++           <double>-2.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.ComplexNumber">
++          <void property="im">
++           <double>-12.0</double>
++          </void>
++          <void property="re">
++           <double>23.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++      <void index="1">
++       <array class="Numbers.ComplexNumber" length="2">
++        <void index="0">
++         <object class="Numbers.ComplexNumber">
++          <void property="im">
++           <double>-23.9</double>
++          </void>
++          <void property="re">
++           <double>12.98</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.ComplexNumber">
++          <void property="re">
++           <double>1.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++     </array>
++    </void>
++    <void property="row">
++     <int>2</int>
++    </void>
++   </object>
++  </void>
++  <void property="result">
++   <object class="CourseWork.Matrix">
++    <void property="column">
++     <int>2</int>
++    </void>
++    <void property="matrix">
++     <array class="[LNumbers.Number;" length="2">
++      <void index="0">
++       <array class="Numbers.Number" length="2">
++        <void index="0">
++         <object class="Numbers.ComplexNumber">
++          <void property="im">
++           <double>124.9</double>
++          </void>
++          <void property="re">
++           <double>-6.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.ComplexNumber">
++          <void property="im">
++           <double>-57.0</double>
++          </void>
++          <void property="re">
++           <double>25.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++      <void index="1">
++       <array class="Numbers.Number" length="2">
++        <void index="0">
++         <object class="Numbers.ComplexNumber">
++          <void property="im">
++           <double>99.9</double>
++          </void>
++          <void property="re">
++           <double>46.980000000000004</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.ComplexNumber">
++          <void property="im">
++           <double>-12.98</double>
++          </void>
++          <void property="re">
++           <double>-33.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++     </array>
++    </void>
++    <void property="row">
++     <int>2</int>
++    </void>
++   </object>
++  </void>
++  <void property="second">
++   <object class="CourseWork.Matrix">
++    <void property="column">
++     <int>2</int>
++    </void>
++    <void property="matrix">
++     <array class="[LNumbers.ComplexNumber;" length="2">
++      <void index="0">
++       <array class="Numbers.ComplexNumber" length="2">
++        <void index="0">
++         <object class="Numbers.ComplexNumber">
++          <void property="im">
++           <double>57.0</double>
++          </void>
++          <void property="re">
++           <double>-4.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.ComplexNumber">
++          <void property="im">
++           <double>-45.0</double>
++          </void>
++          <void property="re">
++           <double>2.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++      <void index="1">
++       <array class="Numbers.ComplexNumber" length="2">
++        <void index="0">
++         <object class="Numbers.ComplexNumber">
++          <void property="im">
++           <double>123.8</double>
++          </void>
++          <void property="re">
++           <double>34.0</double>
++          </void>
++         </object>
++        </void>
++        <void index="1">
++         <object class="Numbers.ComplexNumber">
++          <void property="im">
++           <double>-12.98</double>
++          </void>
++          <void property="re">
++           <double>-34.0</double>
++          </void>
++         </object>
++        </void>
++       </array>
++      </void>
++     </array>
++    </void>
++    <void property="row">
++     <int>2</int>
++    </void>
++   </object>
++  </void>
++ </object>
++</java>
+Index: src/CourseWork/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/CourseWork/Main.java	(revision )
++++ src/CourseWork/Main.java	(revision )
+@@ -0,0 +1,367 @@
++package CourseWork;
++
++import Exceptions.IncorrectSizeException;
++import Numbers.Number;
++import ReadWrite.ReadWriteXML;
++import Numbers.ComplexNumber;
++import Numbers.SimpleNumber;
++import ReadWrite.StructureForSave;
++import ReadWrite.WriteHTML;
++
++import java.io.File;
++import java.util.Scanner;
++
++public class Main {
++
++    public static void main(String[] args) {
++	    Matrix first = new Matrix();
++	    Matrix second = new Matrix();
++	    Matrix result = new Matrix();
++        Menu(first, second, result);
++    }
++
++    private static void enterData(Matrix obj ){
++        System.out.println("Enter matrix size (row,column): ");
++        Scanner in = new Scanner(System.in);
++        obj.setRow(in.nextInt());
++        obj.setColumn(in.nextInt());
++        System.out.println("Choose element type:\n1. Simple Numbers;\n2. Complex Numbers");
++        Integer choice = in.nextInt();
++        switch (choice){
++            case 1:
++                obj.setMatrix(forSimple(obj.getRow(), obj.getColumn()));
++                break;
++            case 2:
++                obj.setMatrix(forComplex(obj.getRow(), obj.getColumn()));
++
++        }
++
++
++    }
++
++    private static SimpleNumber[][] forSimple(int row, int column){
++        Scanner in = new Scanner(System.in);
++        SimpleNumber[][] result = new SimpleNumber[row][column];
++        for(int i = 0; i < row; i++){
++            for(int j = 0; j < column; j++){
++                result[i][j] = new SimpleNumber();
++                result[i][j].setX(in.nextDouble());
++            }
++        }
++        return result;
++    }
++
++    private static ComplexNumber[][] forComplex(int row, int column){
++        Scanner in = new Scanner(System.in);
++        ComplexNumber[][] result = new ComplexNumber[row][column];
++        for(int i = 0; i < row; i++){
++            for(int j = 0; j < column; j++){
++                result[i][j] = new ComplexNumber();
++                result[i][j].setNumber(in.nextLine());
++            }
++        }
++        return result;
++    }
++
++    private static void Menu(Matrix first, Matrix second, Matrix result) {
++
++        Boolean isEmptyF = true, isEmptyS = true, isEmptyR = true;
++        Scanner in = new Scanner(System.in);
++        Integer choice = 0;
++        Double[] action = new Double[2];//powF -0, powS-1, plus-2, minus-3, TransposeF-4, transposeS-5, InverseF-6,InverseS-7,
++        action[0] = 128d;                  //multiply M*M -8, multiplyF M*N -9, multiplyS M*N -10
++        action[1] =256d;
++
++
++        while(!choice.equals(13)) {
++            String f = first.toString(), s = second.toString(), r = result.toString();
++            System.out.println("\n\n\n\nMenu:\n\t\tFirst:\n\n" + f + "\t\tSecond:\n\n" + s + "\t\tResult:\n\n" + r +
++                    "Action:\n1.Set Matrix\n2.Power \n3.First + Second\n4.First - Second\n5.Transpose\n6.Inverse \n" +
++                    "7.Multiply\n8.Result to first\n9.Result to second\n10.Save to XML\n11.Get from XML\n" +
++                    "12.Save to HTML\n13.Exit\nPlease select any action");
++            choice = in.nextInt();
++            switch (choice) {
++                case 1: {  //set matrix
++
++                    System.out.println("Please select matrix:\n1.first\n2.second");
++                    Integer subChoice = in.nextInt();
++                    switch (subChoice) {
++                        case 1:
++                            enterData(first);
++                            isEmptyF = false;
++                            break;
++                        case 2:
++                            enterData(second);
++                            isEmptyS = false;
++                            break;
++                    }
++                    break;
++                }
++                case 2: {   //pow
++                    System.out.println("Please select matrix:\n1.first\n2.second");
++                    Integer subChoice = in.nextInt();
++                    System.out.print("Enter the power:");
++                    int pow = in.nextInt();
++                    switch (subChoice) {
++                        case 1:
++                            if (isEmptyF) {
++                                System.out.println("First matrix is empty!");
++                                break;
++                            }
++                            try {
++                                action[0] = 0d;
++                                action[1] = (double)pow;
++                                result = MatrixOperationLib.pow(first, pow);
++                                isEmptyR = false;
++                            } catch (IncorrectSizeException e) {
++                                e.getMassage();
++                                e.printStackTrace();
++                            }
++                            break;
++                        case 2:
++                            if (isEmptyS) {
++                                System.out.println("Second matrix is empty!");
++                                break;
++                            }
++                            try {
++                                action[0] = 1d;
++                                action[1] = (double)pow;
++                                result = MatrixOperationLib.pow(second, pow);
++                                isEmptyR = false;
++                            } catch (IncorrectSizeException e) {
++                                e.getMassage();
++                                e.printStackTrace();
++                            }
++                            break;
++                    }
++                    break;
++                }
++                case 3: { //plus
++                    if (isEmptyF) {
++                        System.out.println("First matrix is empty!");
++                        break;
++                    }
++                    if (isEmptyS) {
++                        System.out.println("Second matrix is empty!");
++                        break;
++                    }
++                    try {
++                        action[0] = 2d;
++                        action[1] = 0d;
++                        result = MatrixOperationLib.sum(first, second);
++                        isEmptyR = false;
++                    } catch (IncorrectSizeException e) {
++                        e.getMassage();
++                        e.printStackTrace();
++                    }
++                    break;
++                }
++                case 4: { //minus
++                    if (isEmptyF) {
++                        System.out.println("First matrix is empty!");
++                        break;
++                    }
++                    if (isEmptyS) {
++                        System.out.println("Second matrix is empty!");
++                        break;
++                    }
++                    try {
++                        action[0] = 3d;
++                        action[1] = 0d;
++                        result = MatrixOperationLib.difference(first, second);
++                        isEmptyR = false;
++                    } catch (IncorrectSizeException e) {
++                        e.getMassage();
++                        e.printStackTrace();
++                    }
++                    break;
++                }
++                case 5: { // transpose
++                    System.out.println("Please select matrix:\n1.first\n2.second");
++                    Integer subChoice = in.nextInt();
++                    switch (subChoice) {
++                        case 1:
++                            if (isEmptyF) {
++                                System.out.println("First matrix is empty!");
++                                break;
++                            }
++                            action[0] = 4d;
++                            action[1] = 0d;
++                            result = MatrixOperationLib.transpose(first);
++                            isEmptyR = false;
++                            break;
++                        case 2:
++                            if (isEmptyS) {
++                                System.out.println("Second matrix is empty!");
++                                break;
++                            }
++                            action[0] = 5d;
++                            action[1] = 0d;
++                            result = MatrixOperationLib.transpose(second);
++                            isEmptyR = false;
++                            break;
++                    }
++                    break;
++                }
++                case 6: { // inverse
++                    System.out.println("Please select matrix:\n1.first\n2.second");
++                    Integer subChoice = in.nextInt();
++                    switch (subChoice) {
++                        case 1:
++                            if (isEmptyF) {
++                                System.out.println("First matrix is empty!");
++                                break;
++                            }
++                            try {
++                                action[0] = 6d;
++                                result = MatrixOperationLib.inversion(first);
++                            }catch(IncorrectSizeException e){
++                                e.getMassage();
++                                e.printStackTrace();
++                            }
++                            isEmptyR = false;
++                            break;
++                        case 2:
++                            if (isEmptyS) {
++                                System.out.println("Second matrix is empty!");
++                                break;
++                            }
++                            try {
++                                action[0] = 7d;
++                                result = MatrixOperationLib.inversion(second);
++                            }catch(IncorrectSizeException e){
++                                e.getMassage();
++                                e.printStackTrace();
++                            }
++                            isEmptyR = false;
++                            break;
++                    }
++                    break;
++                }
++                case 7: { // multiplication
++                    System.out.println("Select type of multiplication:\n 1. Matrix*Matrix\n2. Matrix*Number");
++                    Integer subChoice = in.nextInt();
++                    switch (subChoice) {
++                        case 1:
++                            if (isEmptyF) {
++                                System.out.println("First matrix is empty!");
++                                break;
++                            }
++                            if (isEmptyS) {
++                                System.out.println("Second matrix is empty!");
++                                break;
++                            }
++                            try {
++                                action[0] = 8d;
++                                result = MatrixOperationLib.multiplication(first, second);
++                                isEmptyR = false;
++                            } catch (IncorrectSizeException e) {
++                                e.getMassage();
++                                e.printStackTrace();
++                            }
++                            break;
++                        case 2: {
++                            System.out.println("Please select matrix:\n1.first\n2.second");
++                            Integer subChoice2 = in.nextInt();
++                            System.out.println("Enter number:");
++                            Double num = in.nextDouble();
++                            switch (subChoice2) {
++                                case 1:
++                                    if (isEmptyF) {
++                                        System.out.println("First matrix is empty!");
++                                        break;
++                                    }
++                                    action[0] = 9d;
++                                    action[1] = num;
++                                    result = MatrixOperationLib.multiplication(first, num);
++                                    isEmptyR = false;
++                                    break;
++                                case 2:
++                                    if (isEmptyS) {
++                                        System.out.println("Second matrix is empty!");
++                                        break;
++                                    }
++                                    action[0] = 10d;
++                                    action[1] = num;
++                                    result = MatrixOperationLib.multiplication(second, num);
++                                    isEmptyR = false;
++                                    break;
++                                default:
++                                    System.out.println("Unknown option");
++                                    break;
++                            }
++                            break;
++                        }
++                        default:
++                            System.out.println("Unknown option");
++                            break;
++                    }
++                    break;
++                }
++                case 8: //result to first
++                    if (isEmptyR) {
++                        System.out.println("Result matrix is empty!");
++                        break;
++                    }
++                    first.setRow(result.getRow());
++                    first.setColumn(result.getColumn());
++                    first.setMatrix(result.getMatrix());
++                    break;
++                case 9: //result to second
++                    if (isEmptyR) {
++                        System.out.println("Result matrix is empty!");
++                        break;
++                    }
++                    second.setRow(result.getRow());
++                    second.setColumn(result.getColumn());
++                    second.setMatrix(result.getMatrix());
++                    isEmptyS = false;
++                    break;
++                case 10: // save to xml
++                    StructureForSave proc = new StructureForSave(first, second, result, action);
++                    ReadWriteXML.WriteXML(proc);
++                    break;
++                case 11:{ //get from xml
++                    System.out.println("Select the XML file what are you want to get and enter its name:");
++                    if(!ListOfXmlFiles()){
++                        break;
++                    }
++                    in.nextLine();
++                    String name = in.nextLine();
++                    StructureForSave temp = ReadWriteXML.ReadXML(name);
++                    first = temp.getFirst();
++                    second = temp.getSecond();
++                    result = temp.getResult();
++                    break;}
++                case 12: //WriteHTML
++                    StructureForSave temp = new StructureForSave(first,second,result,action);
++                    WriteHTML.WriteHTML(temp);
++                    break;
++                case 13: // exit
++                    return;
++                default:
++                    System.out.println("Unknown option");
++                    break;
++            }
++        }
++    }
++
++    public static Boolean ListOfXmlFiles() {
++        try {
++            String path = "./XmlFiles";
++            File dir = new File(path);
++            File[] list = dir.listFiles();
++            if(list.length == 0) {
++                System.out.println("No saved files");
++                return false;
++            }
++            for (File file : list) {
++                System.out.println(file.getName());
++            }
++        }
++        catch (NullPointerException e){
++            System.out.println("Such directory does not exist!");
++        }
++        return true;
++    }
++}
+Index: HtmlFiles/Report_Tue_Oct_31_21:10:26_EET_2017.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HtmlFiles/Report_Tue_Oct_31_21:10:26_EET_2017.html	(revision )
++++ HtmlFiles/Report_Tue_Oct_31_21:10:26_EET_2017.html	(revision )
+@@ -0,0 +1,30 @@
++<!DOCTYPE html >
++
++<html lang="ru">
++<head>
++	<title>Отчёт</title>
++</head>
++<body>
++	<h1>Отчёт о работе программы "Матричный калькулятор"</h1>
++	<h3>Дата и время создания отчёта:Tue Oct 31 21:10:26 EET 2017</h3>
++	<h3>Имя пользователя:ывпва</h3>
++	<pre>
++	<h3>
++First Matrix
++	</h3>
++	</pre>
++	<pre>
++	<h3>
++Second Matrix
++	</h3>
++	</pre>
++	<h3>Unknown operation</h3>
++	<pre>
++	<h3>
++Result Matrix
++	</h3>
++	</pre>
++	<pre>Национальный Технический Университет
++"Харьковский Политехнический Институт"</pre>
++</body>
++</html>
+Index: src/Exceptions/OutOfMatrixException.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Exceptions/OutOfMatrixException.java	(revision )
++++ src/Exceptions/OutOfMatrixException.java	(revision )
+@@ -0,0 +1,5 @@
++package Exceptions;
++
++public class OutOfMatrixException extends ArrayIndexOutOfBoundsException {
++
++}
+Index: .idea/uiDesigner.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/uiDesigner.xml	(revision )
++++ .idea/uiDesigner.xml	(revision )
+@@ -0,0 +1,124 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Palette2">
++    <group name="Swing">
++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
++      </item>
++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
++        <initial-values>
++          <property name="text" value="Button" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="RadioButton" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="CheckBox" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="Label" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
++          <preferred-size width="-1" height="20" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
++      </item>
++    </group>
++  </component>
++</project>
+\ No newline at end of file
+Index: HtmlFiles/Report_Tue_Oct_31_20:32:12_EET_2017.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HtmlFiles/Report_Tue_Oct_31_20:32:12_EET_2017.html	(revision )
++++ HtmlFiles/Report_Tue_Oct_31_20:32:12_EET_2017.html	(revision )
+@@ -0,0 +1,39 @@
++<!DOCTYPE html >
++
++<html lang="ru">
++<head>
++	<title>Отчёт</title>
++</head>
++<body>
++	<h1>Отчёт о работе программы "Матричный калькулятор"</h1>
++	<h3>Дата и время создания отчёта:Tue Oct 31 20:32:12 EET 2017</h3>
++	<h3>Имя пользователя:Dmitry</h3>
++	<table>
++	<pre>
++	<h3>
++First Matrix
++Matrix is: 
++1.0	2.0	
++3.0	4.0	
++	</h3>
++	</pre>
++	<pre>
++	<h3>
++Second Matrix
++Matrix is: 
++4.0	5.0	
++6.0	7.0	
++	</h3>
++	</pre>
++	<h3>First  + Second = </h3>
++	<pre>
++	<h3>
++Result Matrix
++Matrix is: 
++5.0	7.0	
++9.0	11.0	
++	</h3>
++	</pre>
++	</table>
++</body>
++</html>
+Index: HtmlFiles/Report_Tue_Oct_31_20:38:23_EET_2017.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HtmlFiles/Report_Tue_Oct_31_20:38:23_EET_2017.html	(revision )
++++ HtmlFiles/Report_Tue_Oct_31_20:38:23_EET_2017.html	(revision )
+@@ -0,0 +1,38 @@
++<!DOCTYPE html >
++
++<html lang="ru">
++<head>
++	<title>Отчёт</title>
++</head>
++<body>
++	<h1>Отчёт о работе программы "Матричный калькулятор"</h1>
++	<h3>Дата и время создания отчёта:Tue Oct 31 20:38:23 EET 2017</h3>
++	<h3>Имя пользователя:Dmitry</h3>
++	<table>
++	<pre>
++	<h3>
++First Matrix
++1.0	2.0	
++2.0	3.0	
++3.0	4.0	
++	</h3>
++	</pre>
++	<pre>
++	<h3>
++Second Matrix
++1.0	2.0	3.0	
++2.0	3.0	4.0	
++	</h3>
++	</pre>
++	<h3>First<sup><small>-1</small></sup> = </h3>
++	<pre>
++	<h3>
++Result Matrix
++5.0	8.0	11.0	
++8.0	13.0	18.0	
++11.0	18.0	25.0	
++	</h3>
++	</pre>
++	</table>
++</body>
++</html>
+Index: HtmlFiles/Report_Tue_Oct_31_19:51:53_EET_2017.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HtmlFiles/Report_Tue_Oct_31_19:51:53_EET_2017.html	(revision )
++++ HtmlFiles/Report_Tue_Oct_31_19:51:53_EET_2017.html	(revision )
+@@ -0,0 +1,33 @@
++<!DOCTYPE html >
++
++<html lang="ru">
++<head>
++	<title>Отчёт</title>
++</head>
++<body>
++	<h1>Отчёт о работе программы "Матричный калькулятор"</h1>
++	<h3>Дата и время создания отчёта:Tue Oct 31 19:51:53 EET 2017</h3>
++	<h3>Имя пользователя:Dmitry</h3>
++	<table>
++	<pre>
++	<h3>
++First Matrix
++Matrix is: 
++	</h3>
++	</pre>
++	<pre>
++	<h3>
++Second Matrix
++Matrix is: 
++	</h3>
++	</pre>
++	<h3>Unknown operation</h3>
++	<pre>
++	<h3>
++Result Matrix
++Matrix is: 
++	</h3>
++	</pre>
++	</table>
++</body>
++</html>
+Index: HtmlFiles/Report_Tue_Oct_31_20:00:26_EET_2017.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HtmlFiles/Report_Tue_Oct_31_20:00:26_EET_2017.html	(revision )
++++ HtmlFiles/Report_Tue_Oct_31_20:00:26_EET_2017.html	(revision )
+@@ -0,0 +1,37 @@
++<!DOCTYPE html >
++
++<html lang="ru">
++<head>
++	<title>Отчёт</title>
++</head>
++<body>
++	<h1>Отчёт о работе программы "Матричный калькулятор"</h1>
++	<h3>Дата и время создания отчёта:Tue Oct 31 20:00:26 EET 2017</h3>
++	<h3>Имя пользователя:Dmitry</h3>
++	<table>
++	<pre>
++	<h3>
++First Matrix
++Matrix is: 
++-3.0 + 34.0i	-34.0 - 3.0i	
++23.0 + 23.0i	123.0 - 354.8i	
++	</h3>
++	</pre>
++	<pre>
++	<h3>
++Second Matrix
++Matrix is: 
++	</h3>
++	</pre>
++	<h3>First<sup><small>T</small></sup> = </h3>
++	<pre>
++	<h3>
++Result Matrix
++Matrix is: 
++-3.0 + 34.0i	23.0 + 23.0i	
++-34.0 - 3.0i	123.0 - 354.8i	
++	</h3>
++	</pre>
++	</table>
++</body>
++</html>
+Index: src/ReadWrite/WriteHTML.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/ReadWrite/WriteHTML.java	(revision )
++++ src/ReadWrite/WriteHTML.java	(revision )
+@@ -0,0 +1,141 @@
++package ReadWrite;
++
++
++import java.io.*;
++import java.util.Date;
++import java.util.Scanner;
++
++public class WriteHTML {
++    public static void WriteHTML(StructureForSave obj){
++        Date date = new Date();
++        String first = "";
++        String Date = date.toString();
++        String[] splitDate = Date.split(" ");
++        Date = "";
++        for(int i = 0; i<splitDate.length; i++){
++            if(i == splitDate.length -1){
++                Date += splitDate[i];
++            }else {
++                Date += splitDate[i] + "_";
++            }
++        }
++        String title = "./HtmlFiles/Report_"+Date+".html";
++        Scanner in = null;
++        try {
++            in = new Scanner(new File("./HtmlFiles/Components/1Part.txt"));
++        }catch(IOException e){
++            e.printStackTrace();
++        }
++        while(in.hasNext()){
++            first += in.nextLine();
++            if(!in.hasNext())
++                continue;
++            first+= "\r\n";
++        }
++        in.close();
++
++
++        String second = "";
++        try {
++            in = new Scanner(new File("./HtmlFiles/Components/2Part.txt"));
++        }catch(IOException e){
++            e.printStackTrace();
++        }
++        while(in.hasNext()) {
++            second += in.nextLine();
++            if(!in.hasNext())
++                continue;
++            second+= "\r\n";
++        }
++        in.close();
++
++
++        String third = "";
++        try {
++            in = new Scanner(new File("./HtmlFiles/Components/3Part.txt"));
++        }catch(IOException e){
++            e.printStackTrace();
++        }
++        while(in.hasNext())
++            third += in.nextLine() + "\r\n";
++        in.close();
++
++
++        String fourth = "";
++        try {
++            in = new Scanner(new File("./HtmlFiles/Components/4Part.txt"));
++        }catch(IOException e){
++            e.printStackTrace();
++        }
++        while(in.hasNext())
++            fourth += in.nextLine() + "\r\n";
++        in.close();
++
++        String html = first + date.toString()+second;
++        System.out.println("Enter Your name: ");
++        String name= "";
++        Scanner fromConsole = new Scanner(System.in);
++        name = fromConsole.nextLine();
++        html+=name+third;
++
++        String firstMatrix = "\t<pre>\n\t<h3>\nFirst Matrix\n"+ obj.getFirst().toString()+"\t</h3>\n\t</pre>\n";
++        String secondMatrix = "\t<pre>\n\t<h3>\nSecond Matrix\n"+ obj.getSecond().toString()+"\t</h3>\n\t</pre>\n";
++        String thirdMatrix = ChoiceAction(obj.getAction()) +"\t<pre>\n\t<h3>\nResult Matrix\n"+ obj.getResult().toString()+
++                "\t</h3>\n\t</pre>\n";
++        html+=firstMatrix+secondMatrix+thirdMatrix;
++        html+="\t"+fourth;
++        try(FileWriter writer = new FileWriter(title, false))
++        {
++            writer.write(html);
++            writer.flush();
++        }
++        catch(IOException ex){
++
++            System.out.println(ex.getMessage());
++        }
++    }
++
++    private static String ChoiceAction(Double[] i){
++        String choice = Double.toString(i[0]);
++        String action = "";
++        switch(choice){
++            case "0.0":
++                action = "First"+"<sup><small>"+ i[1] +"</small></sup> = ";
++                break;
++            case "1.0":
++                action = "Second"+"<sup><small>"+ i[1] +"</small></sup> = ";
++                break;
++            case "2.0":
++                action = "First  + Second = ";
++                break;
++            case "3.0":
++                action = "First  - Second = ";
++                break;
++            case "4.0":
++                action = "First<sup><small>T</small></sup> = ";
++                break;
++            case "5.0":
++                action = "Second<sup><small>T</small></sup> = ";
++                break;
++            case "6.0":
++                action = "First<sup><small>-1</small></sup> = ";
++                break;
++            case "7.0":
++                action = "Second<sup><small>-1</small></sup> = ";
++                break;
++            case "8.0":
++                action = "First * Second  = ";
++                break;
++            case "9.0":
++                action = "First * "+ i[1] +" = ";
++                break;
++            case "10.0":
++                action = "Second * "+ i[1] + " = ";
++                break;
++            default:
++                action = "Unknown operation";
++                break;
++        }
++        return "\t<h3>"+action+"</h3>\n";
++    }
++}
+Index: .idea/description.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/description.html	(revision )
++++ .idea/description.html	(revision )
+@@ -0,0 +1,1 @@
++<html>Simple <b>Java</b> application that includes a class with <code>main()</code> method</html>
+\ No newline at end of file
+Index: HtmlFiles/Components/2Part.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HtmlFiles/Components/2Part.txt	(revision )
++++ HtmlFiles/Components/2Part.txt	(revision )
+@@ -0,0 +1,2 @@
++</h3>
++	<h3>Имя пользователя:
+\ No newline at end of file
+Index: src/Numbers/Number.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/Numbers/Number.java	(revision )
++++ src/Numbers/Number.java	(revision )
+@@ -0,0 +1,20 @@
++package Numbers;
++
++abstract public class Number {
++
++    abstract public Number plus(Number obj);
++
++    abstract public Number minus(Number obj);
++
++    abstract public Number div(Number obj);
++
++    abstract public Number mul(Number obj);
++
++    abstract public Number mulWithDouble(Double b);
++
++    abstract public Number ret1 ();
++
++    abstract public void setNumber(String s);
++
++    abstract public String toString();
++}
+Index: .idea/webServers.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/webServers.xml	(revision )
++++ .idea/webServers.xml	(revision )
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="WebServers">
++    <option name="servers">
++      <webServer id="958dc785-8b32-4053-8696-8e2b23a60f5a" name="Course_work" url="https://github.com/DmitryKulinich/course_work.git">
++        <fileTransfer port="0" mountedRoot="$PROJECT_DIR$" accessType="MOUNT" />
++      </webServer>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: src/CourseWork/MatrixOperationLib.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/CourseWork/MatrixOperationLib.java	(revision )
++++ src/CourseWork/MatrixOperationLib.java	(revision )
+@@ -0,0 +1,141 @@
++package CourseWork;
++
++import Exceptions.IncorrectSizeException;
++import Numbers.Number;
++
++public class MatrixOperationLib {
++
++    public static Matrix multiplication (Matrix first, Matrix second)
++            throws IncorrectSizeException {
++        if (!first.getColumn().equals(second.getRow())) {
++            throw new IncorrectSizeException("Multiplication is impossible, because matrixes" +
++                    " has unacceptable size");
++        }
++        Matrix result = new Matrix(first.getRow(), second.getColumn());
++        for (int i = 0; i < first.getRow(); i++) {
++            for (int j = 0; j < second.getColumn(); j++) {
++                result.setMatrixElement(i, j, first.getMatrixElement(0,0).mulWithDouble(0.0));
++                for (int k = 0; k < second.getRow(); k++) {
++                    result.setMatrixElement(i, j,result.getMatrixElement(i,j).
++                            plus(first.getMatrixElement(i,k).mul(second.getMatrixElement(k,j))));
++                }
++            }
++        }
++        return result;
++    }
++
++    public static Matrix multiplication(Matrix first, Double x ){
++        Matrix result = new Matrix(first.getRow(), first.getColumn());
++        for (int i = 0; i < result.getRow();i++){
++            for(int j = 0; j < result.getColumn(); j++){
++                result.setMatrixElement(i,j,first.getMatrixElement(i,j).mulWithDouble(x));
++            }
++        }
++        return result;
++    }
++
++    public static Matrix pow (Matrix first, Integer n) throws IncorrectSizeException{
++        if(!first.getRow().equals(first.getColumn())){
++            throw new IncorrectSizeException("Matrix must be square");
++        }
++        Matrix result = new Matrix(first);
++        try{
++            for(int i = 0; i < n-1; i++) {
++                result.setMatrix(multiplication(result, first).getMatrix());
++            }
++        }catch(IncorrectSizeException e){
++            e.getMassage();
++            e.printStackTrace();
++        }
++        return result;
++    }
++
++    public static Matrix transpose (Matrix first){
++        Matrix result = new Matrix(first.getColumn(), first.getRow());
++        for(int i = 0; i< result.getRow(); i++){
++            for(int j = 0; j < result.getColumn(); j++){
++                result.setMatrixElement(i,j,first.getMatrixElement(j,i));
++            }
++        }
++        return result;
++    }
++
++    public static Matrix sum (Matrix first, Matrix second) throws IncorrectSizeException{
++        if(!first.getRow().equals(second.getRow()) || !first.getColumn().equals(second.getColumn())){
++            throw new IncorrectSizeException("Incorrect size for summation");
++        }
++        Matrix result = new Matrix(first.getRow(), first.getColumn());
++        for( int i = 0; i < result.getRow(); i++){
++            for(int j = 0; j < result.getColumn(); j++){
++                result.setMatrixElement(i,j,first.getMatrixElement(i,j).plus(second.getMatrixElement(i,j)));
++            }
++        }
++        return result;
++    }
++
++    public static Matrix difference (Matrix first, Matrix second) throws IncorrectSizeException{
++        if(!first.getRow().equals(second.getRow()) || !first.getColumn().equals(second.getColumn())){
++            throw new IncorrectSizeException("Incorrect size for summation");
++        }
++        Matrix result = new Matrix(first.getRow(), first.getColumn());
++        for( int i = 0; i < result.getRow(); i++){
++            for(int j = 0; j < result.getColumn(); j++){
++                result.setMatrixElement(i,j,first.getMatrixElement(i,j).minus(second.getMatrixElement(i,j)));
++            }
++        }
++        return result;
++    }
++
++    public static Matrix inversion (Matrix first) throws IncorrectSizeException {
++
++        if(!first.isSquare()){
++            throw new IncorrectSizeException("Matrix is not a square");
++        }
++
++        Matrix matrix = (Matrix) Matrix.deepClone(first);
++
++        Integer N = matrix.getRow();
++        Number temp;
++        Matrix result = new Matrix(N,N);
++        Number zero = first.getMatrixElement(0,0).mulWithDouble(0.0);
++        Number one = zero.ret1();
++
++        for (int i = 0; i < N; i++) {
++            for (int j = 0; j < N; j++) {
++                result.setMatrixElement(i, j, zero);
++                if (i == j)
++                    result.setMatrixElement(i, j, one); // тут костыль, незнаю как исправить. Нужно присвоить 1
++            }
++        }
++        for (int k = 0; k < N; k++){
++            temp = matrix.getMatrixElement(k,k);
++            for (int j = 0; j < N; j++) {
++                matrix.setMatrixElement(k,j,matrix.getMatrixElement(k,j).div(temp));
++                result.setMatrixElement(k,j,result.getMatrixElement(k,j).div(temp));
++            }
++
++            for (int i = k + 1; i < N; i++) {
++                temp = matrix.getMatrixElement(i,k);
++                for (int j = 0; j < N; j++) {
++                    matrix.setMatrixElement(i,j, matrix.getMatrixElement(i,j).minus(matrix.getMatrixElement(k,j).mul(temp)));
++                    result.setMatrixElement(i,j, result.getMatrixElement(i,j).minus(result.getMatrixElement(k,j).mul(temp)));
++                }
++            }
++        }
++
++        for (int k = N - 1; k > 0; k--) {
++            for (int i = k - 1; i >= 0; i--) {
++                temp = matrix.getMatrixElement(i,k);
++                for (int j = 0; j < N; j++) {
++                    matrix.setMatrixElement(i,j, matrix.getMatrixElement(i,j).minus(matrix.getMatrixElement(k,j).mul(temp)));
++                    result.setMatrixElement(i,j, result.getMatrixElement(i,j).minus(result.getMatrixElement(k,j).mul(temp)));
++                }
++            }
++        }
++
++        return result;
++
++    }
++
++}
++
+Index: src/CourseWork/Matrix.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/CourseWork/Matrix.java	(revision )
++++ src/CourseWork/Matrix.java	(revision )
+@@ -0,0 +1,111 @@
++package CourseWork;
++
++import Exceptions.OutOfMatrixException;
++import Numbers.Number;
++import java.io.*;
++
++public class Matrix implements Cloneable, Serializable {
++
++    private Integer row = 0;
++    private Integer column = 0;
++    private Number[][] matrix = new Number[row][column];
++
++    public Matrix() {
++    }
++    public Matrix(Integer row, Integer column, Number[][] matrix) {
++        this.row = row;
++        this.column = column;
++        this.matrix = matrix;
++    }
++    public Matrix(Integer row, Integer column) {
++
++        this.row = row;
++        this.column = column;
++        matrix = new Number[row][column];
++    }
++    public Matrix(Matrix other) {
++        row = other.getRow();
++        column = other.getColumn();
++        matrix = other.getMatrix();
++    }
++
++    public static Object deepClone(Object object) {
++        try {
++            ByteArrayOutputStream baos = new ByteArrayOutputStream();
++            ObjectOutputStream oos = new ObjectOutputStream(baos);
++            oos.writeObject(object);
++            ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
++            ObjectInputStream ois = new ObjectInputStream(bais);
++            return ois.readObject();
++        } catch (Exception e) {
++            e.printStackTrace();
++            return null;
++        }
++    }
++
++    public Integer getRow() {
++        return row;
++    }
++
++    public void setRow(Integer row) {
++        this.row = row;
++    }
++
++    public Integer getColumn() {
++        return column;
++    }
++
++    public void setColumn(Integer column) {
++        this.column = column;
++    }
++
++    public Number[][] getMatrix() {
++        return matrix;
++    }
++
++    public void setMatrix(Number[][] matrix) {
++        this.matrix = matrix;
++    }
++
++    public Number getMatrixElement(Integer row, Integer column) {
++        if (row > this.row)
++            if (column > this.column)
++                throw new OutOfMatrixException();
++        return matrix[row][column];
++    }
++
++    public void setMatrixElement(Integer row, Integer column, Number n) {
++        if (row < this.row)
++            if (column < this.column)
++                matrix[row][column] = n;
++            else
++                throw new OutOfMatrixException();
++        else
++            throw new OutOfMatrixException();
++    }
++
++    public Boolean isSquare() {
++        return row.equals(column);
++    }
++
++    @Override
++    public String toString() {
++        String MatrixToString = "";
++        for (int i = 0; i < row; i++) {
++            for (int j = 0; j < column; j++) {
++                MatrixToString += matrix[i][j] + "\t";
++            }
++            MatrixToString += "\n";
++        }
++        return MatrixToString;
++    }
++
++    @Override
++    public Matrix clone() {
++        try {
++            return (Matrix) super.clone();
++        } catch (CloneNotSupportedException ex) {
++            throw new InternalError();
++        }
++    }
++}
