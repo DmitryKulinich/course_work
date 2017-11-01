@@ -33,7 +33,6 @@ public class MatrixOperationLib {
         }
         return result;
     }
-
     public static Matrix pow (Matrix first, Integer n) throws IncorrectSizeException{
         if(!first.getRow().equals(first.getColumn())){
             throw new IncorrectSizeException("Matrix must be square");
@@ -49,7 +48,6 @@ public class MatrixOperationLib {
         }
         return result;
     }
-
     public static Matrix transpose (Matrix first){
         Matrix result = new Matrix(first.getColumn(), first.getRow());
         for(int i = 0; i< result.getRow(); i++){
@@ -59,7 +57,6 @@ public class MatrixOperationLib {
         }
         return result;
     }
-
     public static Matrix sum (Matrix first, Matrix second) throws IncorrectSizeException{
         if(!first.getRow().equals(second.getRow()) || !first.getColumn().equals(second.getColumn())){
             throw new IncorrectSizeException("Incorrect size for summation");
@@ -72,7 +69,6 @@ public class MatrixOperationLib {
         }
         return result;
     }
-
     public static Matrix difference (Matrix first, Matrix second) throws IncorrectSizeException{
         if(!first.getRow().equals(second.getRow()) || !first.getColumn().equals(second.getColumn())){
             throw new IncorrectSizeException("Incorrect size for summation");
@@ -85,7 +81,6 @@ public class MatrixOperationLib {
         }
         return result;
     }
-
     public static Matrix inversion (Matrix first) throws IncorrectSizeException {
 
         if(!first.isSquare()){

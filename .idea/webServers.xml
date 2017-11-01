@@ -5,6 +5,9 @@
       <webServer id="958dc785-8b32-4053-8696-8e2b23a60f5a" name="Course_work" url="https://github.com/DmitryKulinich/course_work.git">
         <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
+      <webServer id="7418826f-63d4-49fb-8452-f7902fdac0be" name="course_work" url="https://github.com/DmitryKulinich/course_work.git">
+        <fileTransfer port="0" mountedRoot="$PROJECT_DIR$" accessType="MOUNT" />
+      </webServer>
     </option>
   </component>
 </project>
