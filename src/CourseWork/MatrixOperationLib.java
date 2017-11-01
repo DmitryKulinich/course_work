@@ -23,7 +23,6 @@ public class MatrixOperationLib {
         }
         return result;
     }
-
     public static Matrix multiplication(Matrix first, Double x ){
         Matrix result = new Matrix(first.getRow(), first.getColumn());
         for (int i = 0; i < result.getRow();i++){
