@@ -1,5 +1,7 @@
 package Numbers;
 
+import javafx.scene.control.Alert;
+
 import java.io.Serializable;
 import java.util.Objects;
 import java.util.StringTokenizer;
@@ -19,33 +21,38 @@ public class ComplexNumber extends Number implements Serializable{
     }
 
     public void setNumber(String num){
-        StringTokenizer st = new StringTokenizer(num," +-i", true);
-        Integer iter = 0;
-        this.setRe(1.0);
-        while(st.hasMoreTokens()){
-            String temp = st.nextToken();
-            if(temp.equals(" ")){
-                continue;
+        try {
+            StringTokenizer st = new StringTokenizer(num, " +-i", true);
+            Integer iter = 0;
+            this.setRe(1.0);
+            while (st.hasMoreTokens()) {
+                String temp = st.nextToken();
+                if (temp.equals(" ")) {
+                    continue;
+                }
+                if (iter.equals(0) && temp.equals("-")) {
+                    this.setRe(-1.0);
+                    continue;
+                }
+                if (iter.equals(0)) {
+                    this.setRe(getRe() * Double.parseDouble(temp));
+                }
+                if (iter.equals(1) && temp.equals("-")) {
+                    this.setIm(-1.0);
+                    continue;
+                }
+                if (iter.equals(1) && temp.equals("+")) {
+                    this.setIm(1.0);
+                    continue;
+                }
+                if (iter.equals(1)) {
+                    this.setIm(getIm() * Double.parseDouble(temp));
+                }
+                iter++;
             }
-            if(iter.equals(0) && temp.equals("-")){
-                this.setRe(-1.0);
-                continue;
-            }
-            if(iter.equals(0)){
-                this.setRe(getRe()*Double.parseDouble(temp));
-            }
-            if(iter.equals(1) && temp.equals("-")){
-                this.setIm(-1.0);
-                continue;
-            }
-            if(iter.equals(1) && temp.equals("+")){
-                this.setIm(1.0);
-                continue;
-            }
-            if(iter.equals(1)){
-                this.setIm(getIm()*Double.parseDouble(temp));
-            }
-            iter++;
+        }catch(Exception e){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.showAndWait();
         }
     }
 
