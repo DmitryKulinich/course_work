@@ -5,8 +5,7 @@ import Numbers.Number;
 
 public class MatrixOperationLib {
 
-    public static Matrix multiplication (Matrix first, Matrix second)
-            throws IncorrectSizeException {
+    public static Matrix multiplication (Matrix first, Matrix second) throws IncorrectSizeException {
         if (!first.getColumn().equals(second.getRow())) {
             throw new IncorrectSizeException("Multiplication is impossible, because matrixes" +
                     " has unacceptable size");
@@ -23,7 +22,6 @@ public class MatrixOperationLib {
         }
         return result;
     }
-
     public static Matrix multiplication(Matrix first, Double x ){
         Matrix result = new Matrix(first.getRow(), first.getColumn());
         for (int i = 0; i < result.getRow();i++){
