@@ -1,5 +1,7 @@
 package Numbers;
 
+import javafx.scene.control.Alert;
+
 import java.io.Serializable;
 
 public class SimpleNumber extends Number implements Serializable{
@@ -19,7 +21,14 @@ public class SimpleNumber extends Number implements Serializable{
     public void setX(Double x) {
         this.x = x;
     }
-    public void setNumber(String x){this.x = Double.parseDouble(x);}
+    public void setNumber(String x){
+        try {
+            this.x = Double.parseDouble(x);
+        }catch(Exception e){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.showAndWait();
+        }
+    }
     public  Number ret1(){
         return new SimpleNumber(1.0);
     }

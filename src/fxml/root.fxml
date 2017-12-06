@@ -31,9 +31,9 @@
     </MenuBar>
     <RadioButton fx:id="simple" layoutX="122.0" layoutY="35.0" mnemonicParsing="false" onAction="#doSimple" text="Simple Number" />
     <RadioButton fx:id="complex" layoutX="237.0" layoutY="35.0" mnemonicParsing="false" onAction="#doComplex" text="Complex Number" />
-    <TableView fx:id="firstMatrix" layoutX="16.0" layoutY="170.0" prefHeight="200.0" prefWidth="200.0" />
-    <TableView fx:id="secondMatrix" layoutX="231.0" layoutY="170.0" prefHeight="200.0" prefWidth="200.0" />
-    <TableView fx:id="resultMatrix" layoutX="137.0" layoutY="486.0" prefHeight="200.0" prefWidth="200.0" />
+    <TableView fx:id="firstTable" layoutX="16.0" layoutY="170.0" prefHeight="200.0" prefWidth="200.0" />
+    <TableView fx:id="secondTable" layoutX="231.0" layoutY="170.0" prefHeight="200.0" prefWidth="200.0" />
+    <TableView fx:id="resultTable" layoutX="137.0" layoutY="486.0" prefHeight="200.0" prefWidth="200.0" />
     <AreaChart id="AreaChart" prefHeight="576.0" prefWidth="463.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0">
       <xAxis>
         <CategoryAxis side="BOTTOM" />
