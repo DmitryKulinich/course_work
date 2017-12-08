@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.collections.*?>
 <?import javafx.scene.chart.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.paint.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GUI.rootController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="GUI.rootController">
   <children>
     <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
       <menus>
@@ -31,9 +28,9 @@
     </MenuBar>
     <RadioButton fx:id="simple" layoutX="122.0" layoutY="35.0" mnemonicParsing="false" onAction="#doSimple" text="Simple Number" />
     <RadioButton fx:id="complex" layoutX="237.0" layoutY="35.0" mnemonicParsing="false" onAction="#doComplex" text="Complex Number" />
-    <TableView fx:id="firstTable" layoutX="16.0" layoutY="170.0" prefHeight="200.0" prefWidth="200.0" />
-    <TableView fx:id="secondTable" layoutX="231.0" layoutY="170.0" prefHeight="200.0" prefWidth="200.0" />
-    <TableView fx:id="resultTable" layoutX="137.0" layoutY="486.0" prefHeight="200.0" prefWidth="200.0" />
+    <TableView fx:id="firstTable" layoutX="18.0" layoutY="132.0" prefHeight="200.0" prefWidth="200.0" />
+    <TableView fx:id="secondTable" layoutX="322.0" layoutY="132.0" prefHeight="200.0" prefWidth="200.0" />
+    <TableView fx:id="resultTable" layoutX="172.0" layoutY="479.0" prefHeight="200.0" prefWidth="200.0" />
     <AreaChart id="AreaChart" prefHeight="576.0" prefWidth="463.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0">
       <xAxis>
         <CategoryAxis side="BOTTOM" />
@@ -42,45 +39,32 @@
         <NumberAxis prefHeight="528.0" prefWidth="16.0" side="LEFT" />
       </yAxis>
     </AreaChart>
-    <Label layoutX="87.0" layoutY="145.0" text="First Matrix" />
-    <Label layoutX="294.0" layoutY="145.0" text="Second Matrix" />
-    <Label layoutX="202.0" layoutY="452.0" text="Result Matrix" />
-    <ComboBox fx:id="secondCombobox" layoutX="222.0" layoutY="386.0" onAction="#doChoice2" prefHeight="21.0" prefWidth="200.0">
-      <items>
-        <FXCollections fx:factory="observableArrayList">
-          <String fx:value="Item 1" />
-          <String fx:value="Item 2" />
-          <String fx:value="Item 3" />
-        </FXCollections>
-      </items>
-    </ComboBox>
-    <ComboBox id="midle" fx:id="middleCombobox" layoutX="137.0" layoutY="422.0" onAction="#doChoiceMiddle" prefHeight="21.0" prefWidth="199.9998779296875">
-      <items>
-        <FXCollections fx:factory="observableArrayList">
-          <String fx:value="Item 1" />
-          <String fx:value="Item 2" />
-          <String fx:value="Item 3" />
-        </FXCollections>
-      </items>
-    </ComboBox>
-    <ComboBox fx:id="firstCombobox" layoutY="386.0" onAction="#doChoice1" prefHeight="21.0" prefWidth="200.0" AnchorPane.leftAnchor="14.0">
-      <items>
-        <FXCollections fx:factory="observableArrayList">
-          <String fx:value="Item 1" />
-          <String fx:value="Item 2" />
-          <String fx:value="Item 3" />
-        </FXCollections>
-      </items>
-    </ComboBox>
-    <TextField fx:id="firstNumberM" layoutX="14.0" layoutY="123.0" prefWidth="38.0" />
-    <TextField fx:id="firstNumberN" layoutX="62.0" layoutY="123.0" prefWidth="38.0" />
-    <TextField id="SecondMatrixM" fx:id="secondNumberM" layoutX="231.0" layoutY="123.0" prefWidth="38.0" />
-    <TextField fx:id="secondNumberN" layoutX="279.0" layoutY="123.0" prefWidth="38.0" />
-    <Label layoutX="16.0" layoutY="82.0" text="Size of the first matrix" />
-    <Label layoutX="16.0" layoutY="98.0" text="M*N" />
-    <Label layoutX="232.0" layoutY="85.0" text="Size of the second matrix" />
-    <Label layoutX="232.0" layoutY="101.0" text="M*N" />
-    <Button layoutX="141.0" layoutY="124.0" mnemonicParsing="false" onAction="#doEnterFirst" text="Enter First" />
-    <Button layoutX="341.0" layoutY="124.0" mnemonicParsing="false" onAction="#doEnterSecond" text="Enter Second" />
+    <Label layoutX="94.0" layoutY="110.0" text="A Matrix" />
+    <Label layoutX="400.0" layoutY="110.0" text="B Matrix" />
+    <Label layoutX="238.0" layoutY="452.0" text="Result Matrix" />
+    <TextField fx:id="firstNumberM" layoutX="16.0" layoutY="85.0" prefWidth="38.0" />
+    <TextField fx:id="firstNumberN" layoutX="64.0" layoutY="85.0" prefWidth="38.0" />
+    <TextField id="SecondMatrixM" fx:id="secondNumberM" layoutX="322.0" layoutY="85.0" prefWidth="38.0" />
+    <TextField fx:id="secondNumberN" layoutX="370.0" layoutY="85.0" prefWidth="38.0" />
+    <Label layoutX="16.0" layoutY="60.0" text="Size of the first matrix M*N" />
+    <Label layoutX="322.0" layoutY="60.0" text="Size of the second matrix M*N" />
+    <Button layoutX="143.0" layoutY="86.0" mnemonicParsing="false" onAction="#doEnterFirst" text="Enter First" />
+    <Button layoutX="432.0" layoutY="86.0" mnemonicParsing="false" onAction="#doEnterSecond" text="Enter Second" />
+    <Button layoutX="247.0" mnemonicParsing="false" onAction="#doChange" text="-&gt; &lt;-" textAlignment="CENTER" AnchorPane.topAnchor="190.0" />
+    <Button layoutX="248.0" mnemonicParsing="false" onAction="#doSum" text="A + B" AnchorPane.topAnchor="220.0" />
+    <Button layoutX="249.0" mnemonicParsing="false" onAction="#doDiff" text="A - B" AnchorPane.topAnchor="250.0" />
+    <Button layoutX="249.0" mnemonicParsing="false" onAction="#doMultiply_FirstSecond" text="A * B" AnchorPane.topAnchor="280.0" />
+    <Button layoutX="323.0" mnemonicParsing="false" onAction="#doMultiply_SecondNumber" prefWidth="160.0" text="MultiplyByTheNumber" AnchorPane.topAnchor="340.0" />
+    <Button layoutX="323.0" layoutY="400.0" mnemonicParsing="false" onAction="#doTransposeSecond" prefWidth="199.0" text="Transpose" />
+    <Button layoutX="426.0" mnemonicParsing="false" onAction="#doPowSecond" text="Elevate" AnchorPane.topAnchor="370.0" />
+    <Button layoutX="323.0" layoutY="370.0" mnemonicParsing="false" onAction="#doInverseSecond" prefWidth="102.0" text="Inverse" />
+    <TextField fx:id="SecondMultiplyNumber" layoutX="485.0" prefWidth="38.0" AnchorPane.topAnchor="340.0" />
+    <TextField fx:id="SecondPowNumber" layoutX="484.0" layoutY="370.0" prefWidth="38.0" />
+    <Button mnemonicParsing="false" onAction="#doMultiply_FirstNumber" prefWidth="160.0" text="MultiplyByTheNumber" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="340.0" />
+    <Button layoutY="400.0" mnemonicParsing="false" onAction="#doTransposeFirst" prefWidth="199.0" text="Transpose" AnchorPane.leftAnchor="18.0" />
+    <Button layoutX="121.0" layoutY="370.0" mnemonicParsing="false" onAction="#doPowFirst" text="Elevate" />
+    <Button layoutY="370.0" mnemonicParsing="false" onAction="#doInverseFirst" prefWidth="102.00009999999747" text="Inverse" AnchorPane.leftAnchor="18.0" />
+    <TextField fx:id="FirstMultiplyNumber" layoutX="178.0" prefWidth="38.0" AnchorPane.topAnchor="340.0" />
+    <TextField fx:id="FirstPowNumber" layoutX="178.0" prefWidth="38.0" AnchorPane.topAnchor="370.0" />
   </children>
 </AnchorPane>

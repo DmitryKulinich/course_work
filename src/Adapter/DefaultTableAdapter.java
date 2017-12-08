@@ -5,18 +5,14 @@ import java.util.Arrays;
 import Numbers.Number;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.collections.FXCollections;
-import javafx.event.Event;
 import javafx.scene.control.TableCell;
-//import javafx.scene.control.TableColumn.CellEditEvent;
 import javafx.scene.control.TableColumn;
-import javafx.scene.control.TablePosition;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.util.Callback;
 import javafx.util.StringConverter;
 import javafx.util.converter.DefaultStringConverter;
-import javafx.util.converter.IntegerStringConverter;
 
 public final class DefaultTableAdapter extends AbstractTableAdapter {
     Number[][] data;
