@@ -1,6 +1,6 @@
 package GUI;
 
-import Adapter.DefaultTableAdapter;
+import TextFieldTableCell_Adapter.DefaultTableAdapter;
 import CourseWork.Matrix;
 import Exceptions.IncorrectSizeException;
 import Numbers.ComplexNumber;
@@ -137,9 +137,12 @@ public class rootController implements Initializable {
     }
 
     private void updateTable(Matrix matrix, TableView table) {
-        DefaultTableAdapter TA = new DefaultTableAdapter(table, matrix.getMatrix(), str);
+        DefaultTableAdapter TA = new DefaultTableAdapter(table, matrix.getMatrix(), true);
     }
 
+    private void updateResult( Matrix matrix, TableView table){
+        DefaultTableAdapter TA = new DefaultTableAdapter(table, matrix.getMatrix(),false);
+    }
     @FXML
     void doInverseFirst(ActionEvent event) {
         doInverse(first);
@@ -154,7 +157,7 @@ public class rootController implements Initializable {
         if (matrix != null) {
             try {
                 result = inversion(matrix);
-                updateTable(result, resultTable);
+                updateResult(result, resultTable);
             } catch (IncorrectSizeException e) {
                 alert("Incorrect size for this operation", Alert.AlertType.ERROR);
             }
@@ -173,7 +176,7 @@ public class rootController implements Initializable {
         if (first != null && second != null) {
             try {
                 result = multiplication(first, second);
-                updateTable(result, resultTable);
+                updateResult(result, resultTable);
             } catch (IncorrectSizeException e) {
                 alert("Incorrect size of matrixes", Alert.AlertType.ERROR);
             }
@@ -198,7 +201,7 @@ public class rootController implements Initializable {
                     return;
                 }
                 result = multiplication(matrix, n);
-                updateTable(result, resultTable);
+                updateResult(result, resultTable);
             } else {
                 alert("Enter the number for multiply!", Alert.AlertType.ERROR);
             }
@@ -233,7 +236,7 @@ public class rootController implements Initializable {
                 }
                 try {
                     result = pow(matrix, n);
-                    updateTable(result, resultTable);
+                    updateResult(result, resultTable);
                 } catch (IncorrectSizeException e) {
                     alert("Incorrect size of the matrix!", Alert.AlertType.ERROR);
                 }
@@ -270,7 +273,7 @@ public class rootController implements Initializable {
     private void doTranspose(Matrix matrix) {
         if (matrix != null) {
             result = transpose(matrix);
-            updateTable(result, resultTable);
+            updateResult(result, resultTable);
         } else {
             alert("Enter Matrix!", Alert.AlertType.ERROR);
         }
@@ -281,7 +284,7 @@ public class rootController implements Initializable {
         if (first != null && second != null) {
             try {
                 result = difference(first, second);
-                updateTable(result, resultTable);
+                updateResult(result, resultTable);
             } catch (IncorrectSizeException e) {
                 alert("Incorrect size of matrixes for this operation!", Alert.AlertType.ERROR);
             }

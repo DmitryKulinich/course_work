@@ -1,6 +1,5 @@
-package Adapter;
+package TextFieldTableCell_Adapter;
 
-import javafx.scene.control.TableCell;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.util.StringConverter;
 

@@ -1,4 +1,4 @@
-package Adapter;
+package TextFieldTableCell_Adapter;
 
 import java.util.Arrays;
 
@@ -8,6 +8,7 @@ import javafx.collections.FXCollections;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.util.Callback;
@@ -23,37 +24,37 @@ public final class DefaultTableAdapter extends AbstractTableAdapter {
     StringConverter<?> StrConv = new DefaultStringConverter();
 
     public DefaultTableAdapter() {
-        this((TableView)null, (Number[][])null,(StringConverter) null);
+        this((TableView) null, (Number[][]) null, true);
     }
 
-    public DefaultTableAdapter(TableView tableView, Number[][] data, StringConverter StrConv) {
-        this(tableView, data, (Object[])null, StrConv);
+    public DefaultTableAdapter(TableView tableView, Number[][] data, boolean editable) {
+        this(tableView, data, (Object[]) null, editable);
     }
 
-    public DefaultTableAdapter(TableView tableView, Number[][] data, Object[] columnNames, StringConverter StrConv) {
-        this(tableView, data, columnNames, false, StrConv);
-        tableView.setEditable(true);
+    public DefaultTableAdapter(TableView tableView, Number[][] data, Object[] columnNames, boolean editable) {
+        this(tableView, data, columnNames, false, editable);
     }
 
-    public DefaultTableAdapter(TableView tableView, Number[][] data, Object[] columnNames, boolean autoAlignContentAll, StringConverter StrConv) {
-        this(tableView, data, columnNames, autoAlignContentAll, false, StrConv);
+    public DefaultTableAdapter(TableView tableView, Number[][] data, Object[] columnNames, boolean autoAlignContentAll, boolean editable) {
+        this(tableView, data, columnNames, autoAlignContentAll, false, editable);
     }
 
-    public DefaultTableAdapter(TableView tableView, Number[][] data, Object[] columnNames, boolean autoAlignContentAll, boolean autoRenderAll, StringConverter StrConv) {
+    public DefaultTableAdapter(TableView tableView, Number[][] data, Object[] columnNames, boolean autoAlignContentAll, boolean autoRenderAll, boolean editable) {
         this.tableView = tableView;
         this.data = data;
         this.columnNames = columnNames;
         this.autoAlignContentAll = autoAlignContentAll;
         this.autoRenderAll = autoRenderAll;
-        this.tableView.setEditable(true);
-        if(StrConv != null)
-            this.StrConv = StrConv;
+        this.tableView.setEditable(editable);
         this.adapt();
+    }
+
+    public void setTypeOfTableCell() {
     }
 
     public void setAutoAlignContentAll(boolean value) {
         if (this.autoAlign != null) {
-            for(int i = 0; i < this.autoAlign.length; ++i) {
+            for (int i = 0; i < this.autoAlign.length; ++i) {
                 this.autoAlign[i] = value;
             }
 
@@ -70,7 +71,7 @@ public final class DefaultTableAdapter extends AbstractTableAdapter {
 
     public void setAutoRenderAll(boolean value) {
         if (this.autoRender != null) {
-            for(int i = 0; i < this.autoRender.length; ++i) {
+            for (int i = 0; i < this.autoRender.length; ++i) {
                 this.autoRender[i] = value;
             }
 
@@ -102,14 +103,13 @@ public final class DefaultTableAdapter extends AbstractTableAdapter {
             if (this.columnNames == null) {
                 this.columnNames = new Object[this.columns.length];
 
-                for(i = 0; i < this.columnNames.length; ++i) {
+                for (i = 0; i < this.columnNames.length; ++i) {
                     this.columnNames[i] = "Column " + (i + 1);
                 }
             }
-
             this.tableCellValues = new TextFieldTableCell[this.columns.length];
 
-            for(i = 0; i < this.columns.length; ++i) {
+            for (i = 0; i < this.columns.length; ++i) {
                 colNameTemp = this.columnNames[i];
                 this.columns[i] = new TableColumn<String, String>(colNameTemp.toString());
                 this.columns[i].setEditable(true);
@@ -127,7 +127,7 @@ public final class DefaultTableAdapter extends AbstractTableAdapter {
     private void createRows() {
         this.listRows = FXCollections.observableArrayList();
         if (this.data != null && this.data.length > 0) {
-            for(int i = 0; i < this.data.length; ++i) {
+            for (int i = 0; i < this.data.length; ++i) {
                 this.listRows.add(new SimpleIntegerProperty(i));
             }
         }
@@ -135,7 +135,7 @@ public final class DefaultTableAdapter extends AbstractTableAdapter {
     }
 
     private void createCellValues() {
-        for(int j = 0; j < this.columns.length; ++j) {
+        for (int j = 0; j < this.columns.length; ++j) {
             final int i = j;
             this.columns[i].setCellValueFactory(new PropertyValueFactory(""));
             this.columns[i].setCellFactory(new Callback<TableColumn<String, String>, TableCell<String, String>>() {
@@ -149,8 +149,9 @@ public final class DefaultTableAdapter extends AbstractTableAdapter {
                                 value = DefaultTableAdapter.this.data[this.getIndex()][i];
                                 this.renderItem(value);
                             }
-                            if(StrConv != null)
+                            if (StrConv != null)
                                 this.setConverter(StrConv);
+
                         }
                     };
                 }
@@ -160,7 +161,7 @@ public final class DefaultTableAdapter extends AbstractTableAdapter {
 
     }
 
-    private void updateCell(TableColumn.CellEditEvent<String, String> t){
+    private void updateCell(TableColumn.CellEditEvent<String, String> t) {
         int row = t.getTablePosition().getRow();
         int column = t.getTablePosition().getColumn();
         data[row][column].setNumber(t.getNewValue());
@@ -179,15 +180,23 @@ public final class DefaultTableAdapter extends AbstractTableAdapter {
     }
 
     public void setValueAt(Object value, int rowIndex, int columnIndex) {
-        this.data[rowIndex][columnIndex].setNumber((String)value);
+        this.data[rowIndex][columnIndex].setNumber((String) value);
     }
 
     public void setTableCellValue(final TextFieldTableCell<Object, Object> tableCell, int columnIndex) {
+//        if (this.tableCell == new TextFieldTableCell<>().getClass()) {
         this.columns[columnIndex].setCellFactory(new Callback<TableColumn<String, String>, TableCell<String, String>>() {
             public TextFieldTableCell call(TableColumn<String, String> param) {
                 return tableCell;
             }
         });
+//        } else {
+//            this.columns[columnIndex].setCellFactory(new Callback<TableColumn<String, String>, TableCell<String, String>>() {
+//                public TableCell call(TableColumn<String, String> param) {
+//                    return tableCell;
+//                }
+//            });
+//        }
     }
 
 //    public void removeRow(int rowIndex) {

@@ -1,8 +1,5 @@
-package Adapter;
+package TextFieldTableCell_Adapter;
 
-import Numbers.Number;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.collections.ObservableList;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableCell;
