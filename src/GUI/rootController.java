@@ -80,8 +80,14 @@ public class rootController implements Initializable {
             alert("Enter size of matrix. M*N", Alert.AlertType.ERROR);
             return;
         }
-        int m = Integer.parseInt(firstNumberM.getText());
-        int n = Integer.parseInt(firstNumberN.getText());
+        Integer m = null, n = null;
+        try {
+            m = Integer.parseInt(firstNumberM.getText());
+            n = Integer.parseInt(firstNumberN.getText());
+        } catch (Exception e) {
+            alert("Wrong size text field. Try enter again!", Alert.AlertType.ERROR);
+            return;
+        }
         first = new Matrix(m, n);
         enterData(first, m, n);
         updateTable(first, firstTable);
@@ -97,8 +103,14 @@ public class rootController implements Initializable {
             alert("Enter size of matrix. M*N", Alert.AlertType.ERROR);
             return;
         }
-        int m = Integer.parseInt(secondNumberM.getText());
-        int n = Integer.parseInt(secondNumberN.getText());
+        Integer m = null, n = null;
+        try {
+            m = Integer.parseInt(secondNumberM.getText());
+            n = Integer.parseInt(secondNumberN.getText());
+        } catch (Exception e) {
+            alert("Wrong size text field. Try enter again!", Alert.AlertType.ERROR);
+            return;
+        }
         second = new Matrix(m, n);
         enterData(second, m, n);
         updateTable(second, secondTable);
@@ -138,7 +150,7 @@ public class rootController implements Initializable {
         doInverse(second);
     }
 
-    private void doInverse(Matrix matrix){
+    private void doInverse(Matrix matrix) {
         if (matrix != null) {
             try {
                 result = inversion(matrix);
@@ -153,19 +165,19 @@ public class rootController implements Initializable {
 
     @FXML
     void doMultiply_FirstNumber(ActionEvent event) {
-        doMultiplyByNumber(first,FirstMultiplyNumber.getText());
+        doMultiplyByNumber(first, FirstMultiplyNumber.getText());
     }
 
     @FXML
     void doMultiply_FirstSecond(ActionEvent event) {
-        if(first != null && second != null){
-            try{
+        if (first != null && second != null) {
+            try {
                 result = multiplication(first, second);
                 updateTable(result, resultTable);
-            }catch(IncorrectSizeException e){
+            } catch (IncorrectSizeException e) {
                 alert("Incorrect size of matrixes", Alert.AlertType.ERROR);
             }
-        }else{
+        } else {
             alert("Enter the matrixes!", Alert.AlertType.ERROR);
         }
     }
@@ -175,22 +187,22 @@ public class rootController implements Initializable {
         doMultiplyByNumber(second, SecondMultiplyNumber.getText());
     }
 
-    private void doMultiplyByNumber(Matrix matrix,String number){
-        if(matrix != null){
-            if(!number.equals("")){
+    private void doMultiplyByNumber(Matrix matrix, String number) {
+        if (matrix != null) {
+            if (!number.equals("")) {
                 Double n = null;
                 try {
                     n = Double.parseDouble(number);
-                } catch(Exception e){
+                } catch (Exception e) {
                     alert("Incorrect number for multiply!", Alert.AlertType.ERROR);
                     return;
                 }
-                result = multiplication(matrix,n);
-                updateTable(result,resultTable);
-            }else{
+                result = multiplication(matrix, n);
+                updateTable(result, resultTable);
+            } else {
                 alert("Enter the number for multiply!", Alert.AlertType.ERROR);
             }
-        }else{
+        } else {
             alert("Enter the matrix!", Alert.AlertType.ERROR);
         }
     }
@@ -202,44 +214,44 @@ public class rootController implements Initializable {
 
     @FXML
     void doPowSecond(ActionEvent event) {
-        doPow(second,SecondPowNumber.getText());
+        doPow(second, SecondPowNumber.getText());
     }
 
-    private void doPow(Matrix matrix, String number){
-        if(matrix != null){
-            if(!number.equals("")){
+    private void doPow(Matrix matrix, String number) {
+        if (matrix != null) {
+            if (!number.equals("")) {
                 Integer n = null;
                 try {
                     n = Integer.parseInt(number);
-                } catch(Exception e){
+                } catch (Exception e) {
                     alert("Incorrect exponent!", Alert.AlertType.ERROR);
                     return;
                 }
-                if(n < 1){
+                if (n < 1) {
                     alert("Incorrect exponent!", Alert.AlertType.ERROR);
                     return;
                 }
                 try {
                     result = pow(matrix, n);
                     updateTable(result, resultTable);
-                } catch(IncorrectSizeException e){
+                } catch (IncorrectSizeException e) {
                     alert("Incorrect size of the matrix!", Alert.AlertType.ERROR);
                 }
-            }else{
+            } else {
                 alert("Enter the exponent!", Alert.AlertType.ERROR);
             }
-        }else{
+        } else {
             alert("Enter the matrix!", Alert.AlertType.ERROR);
         }
     }
 
     @FXML
     void doSum(ActionEvent event) {
-        if(first != null && second != null){
-            try{
+        if (first != null && second != null) {
+            try {
                 result = sum(first, second);
                 updateTable(result, resultTable);
-            } catch(IncorrectSizeException e) {
+            } catch (IncorrectSizeException e) {
                 alert("Incorrect size of matrixes for this operation!", Alert.AlertType.ERROR);
             }
         }
@@ -255,10 +267,10 @@ public class rootController implements Initializable {
         doTranspose(second);
     }
 
-    private void doTranspose(Matrix matrix){
+    private void doTranspose(Matrix matrix) {
         if (matrix != null) {
-                result = transpose(matrix);
-                updateTable(result, resultTable);
+            result = transpose(matrix);
+            updateTable(result, resultTable);
         } else {
             alert("Enter Matrix!", Alert.AlertType.ERROR);
         }
@@ -266,11 +278,11 @@ public class rootController implements Initializable {
 
     @FXML
     void doDiff(ActionEvent event) {
-        if(first != null && second != null){
-            try{
+        if (first != null && second != null) {
+            try {
                 result = difference(first, second);
                 updateTable(result, resultTable);
-            } catch(IncorrectSizeException e) {
+            } catch (IncorrectSizeException e) {
                 alert("Incorrect size of matrixes for this operation!", Alert.AlertType.ERROR);
             }
         }
@@ -292,6 +304,30 @@ public class rootController implements Initializable {
             secondNumberM.setText(m);
         } else
             alert("Fill the matrix A and B!", Alert.AlertType.ERROR);
+    }
+
+    @FXML
+    void doResToA(ActionEvent event) {
+        if (result != null) {
+            first = result;
+            updateTable(first, firstTable);
+            firstNumberM.setText(first.getRow().toString());
+            firstNumberN.setText(first.getColumn().toString());
+        } else {
+            alert("Result Matrix is empty!", Alert.AlertType.ERROR);
+        }
+    }
+
+    @FXML
+    void doResToB(ActionEvent event) {
+        if (result != null) {
+            second = result;
+            updateTable(second, secondTable);
+            secondNumberM.setText(second.getRow().toString());
+            secondNumberN.setText(second.getColumn().toString());
+        } else {
+            alert("Result Matrix is empty!", Alert.AlertType.ERROR);
+        }
     }
 
     @Override

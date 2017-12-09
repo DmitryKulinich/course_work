@@ -66,5 +66,7 @@
     <Button layoutY="370.0" mnemonicParsing="false" onAction="#doInverseFirst" prefWidth="102.00009999999747" text="Inverse" AnchorPane.leftAnchor="18.0" />
     <TextField fx:id="FirstMultiplyNumber" layoutX="178.0" prefWidth="38.0" AnchorPane.topAnchor="340.0" />
     <TextField fx:id="FirstPowNumber" layoutX="178.0" prefWidth="38.0" AnchorPane.topAnchor="370.0" />
+    <Button layoutX="79.0" layoutY="479.0" mnemonicParsing="false" onAction="#doResToA" text="Result to A" />
+    <Button layoutX="388.0" layoutY="479.0" mnemonicParsing="false" onAction="#doResToB" text="Result to B" />
   </children>
 </AnchorPane>
